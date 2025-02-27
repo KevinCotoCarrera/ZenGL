@@ -97,7 +97,7 @@
   <!-- "Link copied!" notification -->
   {#if copied}
     <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full text-white bg-gray-800 px-4 py-2 rounded-lg shadow-lg">
-      Link copied!
+      Phrase copied!
     </div>
   {/if}
 </div>
