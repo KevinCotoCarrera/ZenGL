@@ -4,12 +4,9 @@
 	import { Spring } from "svelte/motion";
     import {AudioListener, Audio} from "@threlte/extras";
     import pianoG from '$lib/sounds/piano-g.mp3'
+	import type { Box } from "$lib/types/Box";
 
-interface Box {
-  position: [number, number, number];
-  scale: Spring<number>;
-  audio:  any;
-}
+
 
     interactivity()
     
