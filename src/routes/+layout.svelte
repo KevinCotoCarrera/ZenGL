@@ -35,11 +35,9 @@ const validDays = $derived.by(() => {
 			{dayTitle}
 		</h1>
 		<div class="mt-6 flex justify-between w-full max-w-xs">
-				<a href={prevDay} class="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-all"
-					class:bg-gray-600={prevDay}
-					class:text-white={prevDay}
-					class:hover:bg-gray-700={prevDay}
-					class:text-red-400={!prevDay}
+				<a href={prevDay} class="px-4 py-2 transition-all"
+					class:text-red-400={prevDay}
+					class:text-gray-400={!prevDay}
 					class:cursor-not-allowed={!prevDay}
 					aria-disabled={!prevDay}
 				
@@ -49,11 +47,9 @@ const validDays = $derived.by(() => {
 			
 				<a
 					href={nextDayExists ? nextDay : ''}
-					class="px-4 py-2 rounded-lg transition-all"
-					class:bg-gray-600={nextDayExists}
-					class:text-white={nextDayExists}
-					class:hover:bg-gray-700={nextDayExists}
-					class:text-red-400={!nextDayExists}
+					class="px-4 py-2 transition-all"
+					class:text-red-400={nextDayExists}
+					class:text-gray-400={!nextDayExists}
 					class:cursor-not-allowed={!nextDayExists}
 					aria-disabled={!nextDayExists}
 				>
