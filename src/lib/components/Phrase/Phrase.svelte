@@ -13,7 +13,7 @@
 
 </script>
 
-  <div class="text-center w-fit mx-auto" >
+  <div class="text-center w-fit mx-auto mt-4" >
     <div class="text-center transform hover:scale-105 transition-all duration-300 pb-4" transition:fade>
       <div class="text-4xl font-bold text-red-600 mb-4">{phrase}</div>
       <div class="text-xl italic text-gray-700 mb-2">{romaji}</div>
