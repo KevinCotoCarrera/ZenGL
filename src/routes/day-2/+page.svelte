@@ -7,9 +7,9 @@
    
 </script>
 <Phrase
-phrase="その 向こう は どんな 眺め だろ う か‌"
-romaji="sono mukou ha donna nagame daro u ka ?"
-translation="What's the view in the other side?"
+phrase="🗝️ かつて動かない光"
+romaji="Katsute ugokanai hikari"
+translation="The Light That Once Refused to Move"
 />
 
 <CanvasContainer>
