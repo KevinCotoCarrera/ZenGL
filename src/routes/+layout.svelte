@@ -1,8 +1,8 @@
 <script lang="ts">
 	import '../app.css';
 	let { children } = $props();
-	import { page } from '$app/state'; // Fixed import path
-
+	import { page } from '$app/state'; // Fixed import pat
+	let isMainPage= $derived(page.url.pathname == '/')
 const validDays = $derived.by(() => {
 		const modules = import.meta.glob('/src/routes/day-*/+page.svelte');
 		return Object.keys(modules)
@@ -25,7 +25,7 @@ const validDays = $derived.by(() => {
 	const nextDay = $derived(dayNumber ? `/day-${dayNumber + 1}` : null);
 	const nextDayExists = $derived(dayNumber ? validDays.includes(dayNumber + 1) : false);
 </script>
-
+{#if isMainPage} 	{@render children()} {:else}
 <div class="py-4">
 	<div class="relative flex flex-col items-center">
 		<span class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-3 text-sm tracking-wide text-gray-600 dark:text-gray-400">
@@ -61,3 +61,4 @@ const validDays = $derived.by(() => {
 
 	{@render children()}
 </div>
+{/if}
